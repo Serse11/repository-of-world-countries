@@ -1,0 +1,56 @@
+.card {
+  position: relative;
+  height: 150px;
+  max-width: 250px;
+  border-radius: 4px;
+  transition: 0.3s;
+  margin: 0.3em;
+
+  h2 {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
+  &:hover .infos {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  .infos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(91, 91, 91, 0.87);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: 0.3s;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  img {
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
